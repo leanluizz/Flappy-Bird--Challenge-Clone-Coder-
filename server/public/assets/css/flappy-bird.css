@@ -1,0 +1,12 @@
+.textInit{
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: red;
+    padding: 10px;
+}
+.back{
+    position: relative;
+    right: 50%;
+    bottom: 10%;
+
+}

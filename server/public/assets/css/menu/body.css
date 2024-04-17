@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Pixels';
+    src: url('/fonts/dogica/OTF/dogica.otf');
+}
+body{
+    font-family: 'Pixels';
+    background-image: url('/img/MENU.png');
+}
+.menu-content {
+    position: absolute;
+    z-index: -1;
+    margin: 0%;
+    background-image: url('/img/MENU.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.around{
+    justify-content: space-around;
+}
+.between{
+    justify-content: space-between;
+}
+.paddingBtn{
+    cursor: pointer;
+    padding: 30px;
+}
+.column{
+    flex-direction: column;
+    justify-content: center;
+}

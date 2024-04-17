@@ -1,0 +1,27 @@
+@media (max-width:700px) {
+    div .options{
+        display: flex;
+        flex-direction: column;
+    }
+    div .switch{
+        left: 10%;
+    }
+    .title-config{
+        font-size: 4vw;
+    }
+    div .config{
+        left: 0%;
+        margin: 12px;
+        width: 90%;
+        transform: translate(0%);
+        top: 20%;
+    }
+    div .configDificuldade{
+        width: 50%;
+        top: 40%;
+    }
+    p{
+        word-break: break-all;
+        text-align: center;
+    }
+}

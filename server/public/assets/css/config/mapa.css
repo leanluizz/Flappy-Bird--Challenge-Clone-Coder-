@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Pixels';
+    src: url('/fonts/dogica/OTF/dogica.otf');
+}
+body{
+    font-family: 'Pixels';
+    background-color: rgb(109, 194, 233);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box-info{
+    width: 100%;
+    background-color: white;
+}
+img{
+    width: 100%;
+    height: 50vh;
+}
+img:hover{
+    opacity: 60%;
+}
+h3{
+    padding: 50px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy-Bird-Clone</title>
+</head>
+<style>
+    @font-face {
+    font-family: 'Pixels';
+    src: url('/fonts/dogica/OTF/dogica.otf');
+}
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Pixels';
+        text-align: center;
+        height: 100vh;
+    }
+    img{
+        width: 50%;
+    }
+    button{
+        background-color: rgb(45, 146, 45);
+        outline: 0;
+        border: 0;
+        box-shadow: 0;
+        font-family: 'Pixels';
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 50vw;
+        border-radius: 12px;
+        color: white;
+        margin-bottom: 50px;
+    }
+</style>
+<body>
+    <img src="/img/lose/Lose.png" alt="lose">
+    <a style="text-decoration: none;" href="/play"><button><h1>Jogar denovo</h1></button></a>
+    <a style="text-decoration: none;" href="/"><button><h1>Home</h1></button></a>
+    <script src="/js/lose.js"></script>
+</body>
+</html>

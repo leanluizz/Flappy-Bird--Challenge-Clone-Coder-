@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu/body.css">
+    <link rel="stylesheet" href="css/menu/cellConfigs.css">
+    <link rel="stylesheet" href="css/menu/functions.css">
+    <link rel="stylesheet" href="fonts/Pixel.ttf">
+    <link rel="stylesheet" href="css/menu/config.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Flappy-Bird-Clone</title>
+</head>
+<body>
+    <div class="body">
+        <img class="menu-content" src="/img/MENU.png" alt="background">
+        <div class="config" >
+
+            <div class=" d-flex center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                  </svg>
+                <h1 class="title-config">Configurações</h1>
+            </div>
+            <a style="cursor: pointer; position: absolute; right: 10px; top: 0px;" onclick=closeConfiguracoes()>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+            </a>
+            <hr>
+            
+            <div class="d-flex paddingBtn" for="skins">
+                <button class=" 
+                animate__infinite infinite
+                animate__slower	3s
+                animate__animated
+                animate__shakeX
+                nothing">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                </button>
+                <a style="color: black; text-decoration: none;" href="/configuracoes/changeSkin">
+                    <p style="margin-left: 1vw; word-break: break-all;">Skins</p>
+                </a>
+
+            </div>
+            <div class="d-flex paddingBtn" for="skins">
+                <button class=" 
+                animate__infinite infinite
+                animate__slower	3s
+                animate__animated
+                animate__shakeX
+                nothing">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                </button>
+                <a style="color: black; text-decoration: none;" href="/configuracoes/changeMapa">
+                <p style="margin-left: 1vw; word-break: break-all;">Mapas</p>
+                </a>
+            </div>
+            <div class="d-flex paddingBtn" for="skins">
+                <button class=" 
+                animate__infinite infinite
+                animate__slower	3s
+                animate__animated
+                animate__shakeX
+                nothing">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                </button>
+                <p onclick=openDificuldade() style="margin-left: 1vw; word-break: break-all;">Dificuldade</p>
+            </div>
+        </div>
+        <div class="configDificuldade">
+            <div class="d-flex around">
+                <p style="margin: 10px; padding: 10px;" >Dificuldade</p>
+                <a onclick=closeDificuldade()>
+                    <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-x-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </a>
+            </div>
+            <ul type="none">
+                <li onclick="changeColor(event)" class="d-flex">
+                    fácil
+                </li>
+                <li onclick="changeColor(event)" class="d-flex">
+                    médio
+                </li>
+                <li onclick="changeColor(event)" class="d-flex">
+                    difícil
+                </li>
+                
+            </ul>
+        </div>
+        <div class="d-flex">
+            <a class="            
+            animate__slower 2s 
+            animate__infinite
+            infinite
+            animate__animated
+            animate__shakeX">
+                <svg class="switch" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-speaker-fill" viewBox="0 0 16 16">
+                    <path d="M9 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-2.5 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0"/>
+                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6 4a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 7a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7"/>
+                  </svg>
+            </a>
+              <label class="switch">
+                <input class="song" type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+        <div class="functions-content">
+            <p class="
+            animate__infinite	
+            infinite animate__slower	
+            3s animate__animated 
+            animate__flash">
+            Pressione Enter ou clique em Start para iniciar o jogo!
+        </p>
+        </div>
+        <div class="options">
+            <button class="
+            Play
+            animate__slower 3s 
+            animate__infinite
+            infinite
+            animate__animated
+            animate__shakeY
+            ">Play</button>
+
+            <button 
+            onclick=openConfiguracoes()
+            class="
+            Config
+            animate__slower 3s 
+            animate__infinite
+            infinite
+            animate__animated
+            animate__shakeY
+            ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+              </svg>
+        </button>
+        </div>
+    </div>
+    <script src="/js/menu.js"></script>
+    <script src="/js/configurações.js"></script>
+</body>
+</html>

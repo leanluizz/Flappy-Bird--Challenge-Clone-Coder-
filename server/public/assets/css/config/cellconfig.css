@@ -1,0 +1,11 @@
+@media (max-width:700px) {
+     .d-flex{
+        flex-direction: column;
+    }
+     .card{
+        width: 90%;
+    }
+    .bird{
+        width: 10vw;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/flappy-bird.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fblagoicons%2Fart%2FFlappy-Bird-Icon-441620977&psig=AOvVaw1Z7lFXGJKnek0vRMxJ8sDs&ust=1653082435622000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKio2YzC7PcCFQAAAAAdAAAAABAD" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Flappy Bird</title>
+</head>
+<body>
+    <audio class="Points" id="myAudio">
+        <source src="audios/Points.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+      </audio>
+      <audio class="Padrao" id="myAudio">
+        <source src="audios/MapaGames/Padrão.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+      </audio>
+    
+    <div class="record"></div>
+   
+    <div wm-flappy>
+      
+     </div>
+     <div class="overflow-menu">
+            <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" 
+                class="animate__animated animate__slower 3s animate__shakeX back bi bi-skip-backward-fill" viewBox="0 0 16 16">
+                    <path d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5"/>
+                  </svg>
+            </a>
+        <h1 class="textInit">Clique na tela</h1>
+        <div class="d-flex">
+          <img class="spacebar" src="/img/controls/spacebar.png" alt="">
+          <p class="animate__animated animate__flash animate__infinite infinite">Clique repetidamente no spacebar pro bird pular</p class="animate__animated animate__flash animate__infinite infinite">
+        </div>
+            
+      </div>
+
+         
+ </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

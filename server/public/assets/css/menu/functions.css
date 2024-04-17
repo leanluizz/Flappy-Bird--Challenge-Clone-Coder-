@@ -1,0 +1,123 @@
+.functions-content {
+    margin: auto;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: rgb(75, 72, 72);
+    text-align: center;
+    position: relative;
+    top: 40vw;
+    border-radius: 8px;
+    padding: 2%;
+    line-height: 3vh;
+    word-break: break-all;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40vw;
+}
+.Ajuda{
+    margin: 30px;
+    font-family: 'Pixels';
+    box-shadow: none;
+    border: 0;
+    border-radius: 8px;
+    outline: 0;
+    font-size: 2rem;
+    background-color: #dc3545; /* Cor de fundo do Bootstrap (vermelho) */
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+.Play {
+    margin: 30px;
+    font-family: 'Pixels';
+    box-shadow: none;
+    border: 0;
+    border-radius: 8px;
+    outline: 0;
+    font-size: 2rem;
+    background-color: #dc3545; /* Cor de fundo do Bootstrap (vermelho) */
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+.Config {
+    margin: 10px;
+    font-family: 'Pixels';
+    box-shadow: none;
+    border: 0;
+    border-radius: 8px;
+    outline: 0;
+    background-color: #dc3545; /* Cor de fundo do Bootstrap (vermelho) */
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.Play:hover{
+    background-color: rgb(223,75,90);
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 80vw;
+    top: 10vw;;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(219, 16, 16);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ffffff;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ffffff;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  

@@ -1,0 +1,45 @@
+
+.config {
+    display: none;
+    z-index: 2;
+    background-color: wheat;
+    position: absolute;
+    text-align: center;
+    top: 50%; /* Coloca o topo do elemento no meio da tela */
+    left: 50%; /* Coloca a esquerda do elemento no meio da tela */
+    transform: translate(-50%, -50%); /* Move o elemento de volta metade da sua largura e metade de sua altura */
+    width: 50%; /* Define a largura do elemento */
+    overflow: auto;
+}
+.configDificuldade {
+    display: none;
+    z-index: 2;
+    background-color: rgb(190, 147, 68);
+    position: absolute;
+    text-align: center;
+    top: 50%; /* Coloca o topo do elemento no meio da tela */
+    left: 50%; /* Coloca a esquerda do elemento no meio da tela */
+    transform: translate(-50%, -50%); /* Move o elemento de volta metade da sua largura e metade de sua altura */
+    width: 30%; /* Define a largura do elemento */
+    border-radius: 2px;
+    padding: 10px;
+    overflow: auto;
+}
+ul{
+    padding: 5px;
+}
+li{
+    width: 10%;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.nothing{
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    box-shadow: 0;
+    background-color: transparent;
+}
+.selected {
+    color: green;
+  }

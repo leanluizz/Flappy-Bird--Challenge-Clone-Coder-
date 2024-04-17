@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/config/mapa.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Flappy-Bird-Clone</title>
+</head>
+<body>
+    <audio class="ClickMapa" id="myAudio">
+        <source src="/audios/SelectSkin/select-skin.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+      </audio>
+    <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="red" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z"/>
+          </svg>
+      </a>
+    <h1>Escolha um mapa!</h1>
+    <hr>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/sky-padrão.gif" alt="mapa">
+        <div class="box-info">
+            <h3>Standart-Sky</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/sky-pirates.gif" alt="mapa">
+        <div class="box-info">
+            <h3>Pirates</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/gif-night.gif" alt="mapa">
+        <div class="box-info">
+            <h3>Purple-Florest</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/sky-china.gif" alt="mapa">
+        <div class="box-info">
+            <h3>Lago</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/sky-city.gif" alt="mapa">
+        <div class="box-info">
+            <h3>Night-City</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/1.png" alt="mapa">
+        <div class="box-info">
+            <h3>Florest</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/2.png" alt="mapa">
+        <div class="box-info">
+            <h3>Desert</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <div class="card">
+        <img style="cursor: pointer;" onclick=selectMapa(event) src="/img/3.jpeg" alt="mapa">
+        <div class="box-info">
+            <h3>IceLand</h3>
+            <a>
+                <svg style="padding: 20px; display: block; margin: auto; text-align: center;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="animate__slower	3s animate__infinite	infinite animate__animated animate__shakeY bi bi-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                  </svg>
+                </a>
+        </div>
+    </div>
+    <script src="/js/mapa.js"></script>
+</body>
+</html>
